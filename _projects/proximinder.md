@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Proximinder"
-description: Android app, remind user when in radius of location
+excerpt: Android app, remind user when in radius of location
 ---
+
+[GitHub Repository](https://github.com/jacobrolph98/proximinder)
 
 Rationale 
 =========== 
@@ -29,3 +30,5 @@ Some extra requirements I would like to add include;
 
 * Let user sign into google account & save Reminders on cloud 
 * Calculate path from given position, and inform user of all Reminders that would be triggered in advance
+
+TODO
