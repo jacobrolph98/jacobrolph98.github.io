@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Jacob Rolph Software Portfolio
+email: jacobrolph98@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Software Development Portfolio for Jacob Rolph, University Graduate
 github_username: jacobrolph98
@@ -60,7 +60,7 @@ author:
   bio    : "Brief biography"
   links:
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linked-in"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/jacobrolph98/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
