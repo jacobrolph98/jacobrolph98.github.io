@@ -9,4 +9,5 @@ tags:
   - standard
 ---
 
-From now on my portfolio will be hosted using GitHub Pages instead of on Wix. With this I have greater control over the content on my site which only requires static elements. Plus it is a more familiar environment to make changes than Wix.
+I've finished migrating my portfolio from Wix to using Github Pages! Wix was useful to set up a quick website, though I found the interface to make changes counter-intuitive at times, and available themes lacking. 
+Github Pages use static-site generators, like Jekyll, to build a site using markdown or HTML files. This was a good chance to learn more, and customise my portfolio in an environment I'm more familiar with and have greater control over.
