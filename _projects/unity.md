@@ -21,7 +21,7 @@ Variety of enemies with different health, speed, attacks and behaviour. I had re
 The structure of the tree can be set by the developer, where nodes can represent conditional operators or actions (which in turn run specified methods) with nodes returning a success, in progress or failure state upon activation..
 This made both creating/changing behaviours easier but also tracing through them to understand their working, while remaining flexible.
 
-![Behaviour tree example](/assets/projects/unity/behaviourtree.png)
+![Behaviour tree example](/assets/images/projects/unity/behaviourtree.png)
 
 The tree is activated at the top periodically (in my case, 10x a second). Sequences and Selectors are two examples of built-in nodes to determine how to activate branches. Sequences activate branches from left to right until failure, whereas Selectors activate branches left to right until success. So, the above example shows a tree to handle different approaches of getting through a doorway. 
 
@@ -47,18 +47,15 @@ I ended up creating an abstract weapon class, with abstract functions for mouse 
 Each weapon inherits from this class where I can define their properties, what conditions do they fire and how.
 For more complex variations, such as whether to shoot raycast/projectile or charge/fire instantly, I used composition to include this functionality when defining an individual weapon class. 
 
-
 My second project expanded even further, with some weapons having weapon effects on hit such as ricochets, explosions, or even shooting a whole different projectile with its own further effects. 
 These effects can trigger under certain circumstances, such as missing an enemy, hitting an enemy, or getting a headshot.
 
-
-
-Below is the latest demo footage for my first shooter project, including random maps, slightly more enemy variety and some other differences.
+Below is the latest demo footage for my first shooter project. This game begins when the user activates block in the sky, at which point enemies begin spawning in a randomly generated map.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hGmLgs615Tk?si=ovyOnulMBzysWaaC" title="YouTube video player" frameborder="0" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
 
-And here is the latest demo for the follow-up project. 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hen9__XVPzk?si=u9XXtAfe7pueVWnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+And here is the latest demo for the follow-up project. This game starts by slowly spawning enemies and giving the player 10 seconds to pick up weapons before allowing them to retaliate. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hen9__XVPzk?si=u9XXtAfe7pueVWnf" title="YouTube video player" frameborder="0" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Voxel game
 -----------
@@ -66,7 +63,3 @@ Voxel game
  I was particularly performance conscious in this project, as 3d voxel data can quickly use up large abouts of memory to store, and precious frame time for calculations. 
  One such technique was to use a 1d array instead of a 3d array to represent voxel data per chunk. This can result in faster access times due to C# having different optimizations for bounds checking between single and multi-dimensional arrays. The index can be converted to and from relatively easily;
  Flat[x + WIDTH * (y + DEPTH * z)] = Original[x, y, z]
-
-
- Moving Forward
- =============

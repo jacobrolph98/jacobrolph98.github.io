@@ -45,6 +45,9 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+url: 'https://jacobrolph98.github.io/'
+baseurl: ''
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
