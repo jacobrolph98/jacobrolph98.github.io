@@ -3,6 +3,8 @@ title: "Proximinder"
 excerpt: Android app, remind user when in radius of location
 ---
 
+[Leku Location Picker]: https://github.com/AdevintaSpain/Leku
+
 [GitHub Repository](https://github.com/jacobrolph98/proximinder)
 
 Rationale 
@@ -33,10 +35,11 @@ Some extra requirements I would like to add include;
 * Calculate path from given position, and inform user of all Reminders that would be triggered in advance
 
 This application uses a single activity with a fragment for each different page. Creating reminders can use the same fragment as editing them, as the fragment can start with arguments of existing data.
-I make use of an open-source API called Leku location picker, for settings long-latitude coordinates. It includes a google maps API which lets the user search for locations and place a pin. 
+I make use of an open-source API called [Leku Location Picker], for settings long-latitude coordinates. It includes a google maps API which lets the user search for locations and place a pin. 
+
 
 The opening page shows the list of existing reminders (if any), with a floating action button to create more and with a menu at the top right, for signing in and accessing settings.
-Where a name is given, that is used instead of the long/lat coordinates.
+Where a name is given, that is used instead of the long/lat coordinates. For this list I used a RecyclerAdapter, which only loads items that would be visible on the screen, saving memory as opposed to a regular Adapter. 
 
 ![Proximinder list of Reminders](/assets/images/projects/proximinder/list.png)
 
@@ -44,7 +47,7 @@ Where a name is given, that is used instead of the long/lat coordinates.
 ![Proximinder new Reminder](/assets/images/projects/proximinder/new.png)
 
 The user is taken to the prior screen for writing to reminders.
-When the user chooses to set location, an API call is made to Leku for selecting a location. This returns a handful of data, though I only store longitude and latitude. Though in the future, some of this data could be used to auto-fill location names. 
+When the user chooses to set location, an API call is made to Leku for selecting a location. This returns a handful of data, though I only store longitude and latitude. Though in the future, some of this data could be used to auto-fill location names. The save button won't work unless mandatory fields (Reminder, radius, location) are set. 
 
 ![Proximinder pick location](/assets/images/projects/proximinder/location.png)
 
