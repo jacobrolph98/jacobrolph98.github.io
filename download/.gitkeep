@@ -1,1 +1,1 @@
-
+This file's presence prevents the download directory from being deleted if the CV is to be removed & replaced, as Git doesn't track empty foldiers.
