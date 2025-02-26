@@ -15,9 +15,9 @@ Summary
 ============
 The game is a top-down shooter, where the player must fend off hordes of hundreds of enemies using a variety of weapons. Drones will also follow the player and can have their equipped weapon or targetting priorities customised. Enemies will have a variety of behaviours, strengths & weaknesses to encourage strategic configuration of drone loadouts & weapon switching in game. 
 
-While there can be a steep learning-curve to Rust & Bevy, my experience using Unity's implemention of an ECS helped in understanding what sort of architecture will be necessary/optimal to make progress. Plus, Bevy's API abstracts away much of the would-be paint-points of learning Rust for a complex project that includes multi-threading, rendering, time-keeping, etc... 
-For example, when implementing a system, I define a function where the parameters denote which data to access and whether it is read and/or write. Bevy can use this information to schedule functions to run in parallel while avoiding race-conditions, since it knows which functions are eligible to change data.
-Here is an example of a function's signature, whos purpose is to move the drone toward a position orbiting the player. 
+While there can be a steep learning-curve to Rust & Bevy, my experience using Unity's implemention of an ECS helped in understanding what sort of architecture will be necessary/optimal to make progress. Plus, Bevy's API abstracts away much of the would-be paint-points of learning Rust for a complex project that includes multi-threading, rendering, scheduling, and other components of game engines. 
+For example, when implementing a system, I define a function where the parameters denote which data to access and whether it is read and/or write. Bevy can use this information to schedule functions to run in parallel while avoiding race-conditions, since it knows which functions are eligible to write data.
+This function is responsible for moving drones toward a position orbiting the player. 
 ```
 fn drone_follow_player(
     mut drone_query: Query<(&mut GoalVelocity, &Transform), With<Drone>>,
