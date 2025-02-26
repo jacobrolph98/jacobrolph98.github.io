@@ -6,15 +6,17 @@ excerpt: A collection of prototyping different game ideas and how it introduced 
 Rationale
 ============
 
-Programming games was how I first got into this hobby back in 2011, which became a field of study, and hopefully a career (Though would remain all 3)
-Thus when I finished University, I decided to revisit games programming, but instead of using Roblox Lua, I decided to learn Unity and expand on C#. My only prior experience with C# was some years ago in college making a matrices calculator for my final project, which I enjoyed using. Though my optimization at the time wasn't great, I've 
+Video games are what got me into programming, so after completing my education and getting a degree I decided to return back to this but with a more feature-rich engine.
+Thus when I finished University, instead of using Roblox Lua, I decided to learn Unity and expand on my C# skills. This was a language I appreciated using for a matrices calculator project during A-Level, and was happy to return to.
 
-FPS Shooter
+First-Person Shooter
 -----------
 
-Inspired by the new Doom game, my first Unity project was an FPS Shooter. This was mainly to get first-hand experience in learning Unity, and I would shortly after start from scratch with some beneficial hindsight. Though, over both projects, I managed to implement a variety of features;
-The player can press a button to briefly deflect projectiles toward where the player is looking.
-Random pre-made structures are placed in a grid with random offsets and rotations.
+My first project when learning Unity was inspired by Doom Eternal. This was mainly to get first-hand experience in learning Unity, and I would shortly after start from scratch with some beneficial hindsight. Though, over both projects, I managed to implement a variety of features;
+ * The player can press a button to briefly deflect projectiles toward where the player is looking.
+ * A variety of weapons with different properties & behaviours.
+ * Random pre-made structures are placed in a grid with random offsets and rotations.
+ * Variety of NPCs with dynamic behaviours according to game state
 
 ### Enemy Variety ###
 Variety of enemies with different health, speed, attacks and behaviour. I had researched for methods to do this and found Behaviour Trees, an AI technique popularised by the Halo franchise. 
