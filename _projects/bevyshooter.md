@@ -28,3 +28,5 @@ fn drone_follow_player(
 }
 ```
 Since drone_query has mutable access to GoalVelocity, functions accessing that same component won't run in parallel with this one. However, any function which also has read-only access to a player's Transform, (or drone count) may well do. 
+
+TODO more
