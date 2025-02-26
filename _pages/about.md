@@ -3,20 +3,12 @@ permalink: /about/
 title: "About"
 ---
 
-I first began programming around 2011, making increasingly greater changes to existing games made on Roblox using their own version of Lua. This inspired me to take up Computer Science at school before specialising in Software Engineering at the University of Northampton where I graduated with a 2:1 in 2021. 
+My interest in programming started in 2011 when I used to play Roblox, a platform full of games made by the community. I began by reading through the code of free assets, making small changes to better understand how and why it worked. Later I started to repurpose assets and create my own games to play with friends and inviting others within the community, eventually gaining over a thousand visits to my games. This passion motivated me to study Computer Science at school, eventually graduating with a 2:1 in Software Engineering 10 years later. 
 
-I enjoy programming in my spare time, to learn new things I can apply both in a career and toward my passion-projects. 
+Programming is my most longstanding hobby and has sprouted to an interest in digital tech in general. I've spent countless hours tinkering with my computer and working on personal projects, both of which I get much satisfaction out of. I've set up a dual-boot system using rEFInd boot manager, so I'm familiar working in both Windows & Linux (Presently OpenSUSE Slowroll, previously Mint Cinnamon)
 
-Strong:
-* Visual Studio, Anroid Studio, Unity
-* C#, Kotlin, Python
+Much of my time programming has been using C#, Rust & Kotlin, though I've worked with others (Java, Python, PHP, mySQL, Cypher) for several projects during my time in education. I also have some experience in front-end tools, such as HTML, CSS, JavaScript & React. 
 
-Familiar:
-* Eclipse, PyCharm
-* Rust, Java
-* mySQL, Cypher, MongoDB
-* React, TypeScript, PHP, HTML, CSS
-
-[download CV][1]
+[Download CV][1]
 
 [1]:{{ site.url}}/download/cv.docx
