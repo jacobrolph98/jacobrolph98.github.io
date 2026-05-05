@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Jacob Rolph"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Tech Enthusiast | Factorio Addict"
+  bio    : "Tech Enthusiast | Self-Hoster | Factorio Addict"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"

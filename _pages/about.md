@@ -9,6 +9,8 @@ Programming is my most longstanding hobby and has sprouted to an interest in dig
 
 Much of my time programming has been using C#, Rust & Kotlin, though I've worked with others (Java, Python, PHP, mySQL, Cypher) for several projects during my time in education. I also have some experience in front-end tools, such as HTML, CSS, JavaScript & React. 
 
+I've recently gained some experience using docker compose as part of setting up my home-server, while filling some knowledge-gaps in networking principles.
+
 [Download CV][1]
 
 [1]:{{ site.url}}/download/cv.docx
