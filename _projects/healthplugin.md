@@ -26,47 +26,16 @@ fn main() {
 }
 ```
 
-Create entities with health
+Create entities with health and optional components
 ```
 fn spawn(
     mut commands: Commands
 ) {
     commands.spawn((
         Health(100.0),
-        MaxHealth(100.0) // Optional (but recommended) component
-    ));
-
-    commands.spawn((
-        Health(100.0),
         MaxHealth(100.0),
-        MinDamage(5.) // Damage under this value will be ignored
-    ));
-
-    commands.spawn((
-        Health(100.0),
-        MaxHealth(100.0),
-        MaxDamage(5.) // Damage over this value will be reduced to this value
-    ));
-
-    commands.spawn((
-        Health(100.0),
-        MaxHealth(100.0),
-        DamageMultiplier(2.) // Damage will be multiplied by 2
-    ));
-
-    commands.spawn((
-        Health(100.0),
-        MaxHealth(100.0),
-        DamageMultiplier(2.) // Healing will be multiplied by 2
-    ));
-
-    commands.spawn((
-        Health(100.0),
-        MaxHealth(100.0),
-        Armour { // Halves incoming damage
-            rating: 2.,
-            formula: |damage, rating| damage * (1.0 / rating)
-        },
+        MinDamage(5.), // Damage under this value will be ignored
+        DamageMultiplier(1.5), // Incoming damage will be multiplied by 2
     ));
 }
 ```
