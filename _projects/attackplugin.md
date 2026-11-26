@@ -2,7 +2,9 @@
 title: Bevy Attack Plugin
 excerpt: A plugin for Bevy for running spatial queries to check whether attacks of various kinds hit a valid target
 ---
+
 [Github Repo](https://github.com/jacobrolph98/attack_plugin)
+
 Summary 
 =========
 
