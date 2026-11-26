@@ -3,11 +3,9 @@ title: Bevy Attack Plugin
 excerpt: A plugin for Bevy for running spatial queries to check whether attacks of various kinds hit a valid target
 ---
 
-[Github Repo](https://github.com/jacobrolph98/attack_plugin)
-
 Summary 
 =========
-
+[Github Repo](https://github.com/jacobrolph98/attack_plugin)
 Games which feature combat in a spatial environment use a variety of means to determine how an attack can land. This plugin includes functionality for 3;
 ##### Projectiles
 Spawns an entity at a given Transform & speed, and a system will step the projectile along it's trajectory using Raycasts each step to determine whether anything was hit. 
