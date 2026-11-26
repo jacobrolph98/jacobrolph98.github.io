@@ -1,8 +1,8 @@
 ---
-title: Bevy Health Plugin
+title: Bevy Damage Plugin
 excerpt: A plugin for Bevy for storing & mutating health values on entities, including modifiers for incoming changes
 ---
-
+[Github Repo](https://github.com/jacobrolph98/damage_plugin)
 Summary 
 =========
 Health systems are, in some form or another, exceedingly common within video games. Although this plugin is fairly simple it provides a single point for commonly used code. 

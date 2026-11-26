@@ -2,7 +2,7 @@
 title: Bevy Attack Plugin
 excerpt: A plugin for Bevy for running spatial queries to check whether attacks of various kinds hit a valid target
 ---
-
+[Github Repo](https://github.com/jacobrolph98/attack_plugin)
 Summary 
 =========
 
@@ -18,7 +18,7 @@ Each attack can be provided an optional Entity field, pointing to a source. This
 
 Considering both 2d & 3d spatial queries made this plugin more challenge to implement -  I took inspiration from the Bevy Avian physics crate itself to use 2d & 3d crates within a cargo workspace which depend on core functionality, enabling appropriate functions using cargo's features. 
 
-There are a handful of features I'd like to implement, such as line of sight checks for radius checks & projectile rays hitting multiple entities for bullet penetration mechanics.
+There are a handful of features I'd like to implement in the future, such as line of sight checks for radius checks & projectile rays hitting multiple entities for bullet penetration mechanics.
 
 Usage
 ============
